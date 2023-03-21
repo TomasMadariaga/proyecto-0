@@ -1,8 +1,28 @@
+import { HiOutlineShoppingBag } from "react-icons/hi";
+import "./Navbar.css";
+
 export const Navbar = () => {
-  return <div className="navbar">
-    <h2>Componentes</h2>
-    <h2>PRE BUILDS</h2>
-    <h2>CONSOLAS</h2>
-    <h2>PERIFERICOS</h2>
-  </div>;
+  return (
+    <header>
+      <nav className="navbar">
+        <ul className="nav-ul">
+          <li className="nav-li">
+            <a href="#">Componentes</a>
+          </li>
+          <li className="nav-li">
+            <a href="#">Pre Builds</a>
+          </li>
+          <li className="nav-li">
+            <a href="#">Consolas</a>
+          </li>
+          <li className="nav-li">
+            <a href="#">Perifericos</a>
+          </li>
+          <li className="cart">
+            <a href="#"><HiOutlineShoppingBag /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 };
